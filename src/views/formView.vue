@@ -54,14 +54,11 @@ export default {
   
 }
 .searchField{
-  border-style: ridge;
+  border-style: solid;
     border: 1px normal whitesmoke;
-    
-    border-right: none;
     width: 20vw;
     height: 40px;
     border-radius: 50px;
-    border-collapse: collapse;
     background-color: #202124;
     font-size: 20px;
     color: white;
