@@ -4,17 +4,26 @@
       <div class="input-container">
         
   <span class="leftIcon" ><font-awesome-icon icon="search" ></font-awesome-icon></span>
-  <input type="text" class="searchField" placeholder="">
-  <span class="icon iconRightOne"><font-awesome-icon class="righti" icon="camera"></font-awesome-icon></span>
+  <input type="text" v-model="query" @keyup="sendQuery" class="searchField" placeholder="search">
+  <span class="icon iconRightOne"><font-awesome-icon class="right" icon="camera"></font-awesome-icon></span>
   <span class="icon iconRightTwo"><font-awesome-icon icon="microphone"></font-awesome-icon></span>
 </div>
-
-    </form>
+    </form >
   </div>
 </template>
 
 <script>
 export default {
+  data(){
+    return{
+      query:'',
+    }
+  },
+  methods:{
+    sendQuery(){
+      this.$emit('receiveData',this.query)
+    }
+  }
 
 }
 </script>

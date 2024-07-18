@@ -5,12 +5,12 @@
 
 </div>
     <h1 class="googleText">Google </h1>
-<form-view></form-view>
-<searchBtns />
+<form-view @receiveData="getQuery" />
+<searchBtns :query="query" />
 
 
 
-<p>Google Offered in : <a href="#">Francais</a> &nbsp; <a href="#">Francais</a> &nbsp;<a href="#">Francais</a></p>
+
 
 <bottomView />
   </div>
@@ -25,6 +25,17 @@ import bottomView from './views/bottomView.vue'
 export default {
   components:{
     formView,searchBtns,HeaderViewVue,bottomView
+  },
+  data(){
+    return{
+      query:''
+    }
+  },
+  methods:{
+    getQuery(data){
+      this.query=data
+    }
+   
   }
 }
 </script>
