@@ -53,6 +53,7 @@ export default {
     } catch (error) {
       console.error("Error fetching search results:", error);
     }
+
   }
 }
 
@@ -86,15 +87,23 @@ ul{
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
   align-items: center;
-  gap: 10px 10px;
+  margin: 0px 0px 0px 20vw;
+  gap: 10px;
+  background-color: lavender;
+  width: 60vw;
+  justify-content: center;
   
 
 }
 ul li{
-  color: blue;
-  background-color: aquamarine;
+  
+  display: flex;
+  color: rgb(62, 151, 224);
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  
 
 }
 </style>
