@@ -55,7 +55,7 @@ export default {
 }
 .searchField{
   border-style: solid;
-    border: 1px normal whitesmoke;
+    border: 1px solid whitesmoke;
     width: 20vw;
     height: 40px;
     border-radius: 50px;
